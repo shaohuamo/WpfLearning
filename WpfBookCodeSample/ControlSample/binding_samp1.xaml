@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfBookCodeSample.ControlSample.binding_samp1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample.ControlSample"
+        mc:Ignorable="d"
+        Title="binding_samp1" Height="110" Width="300">
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="textBoxName" BorderBrush="Black" Margin="5"></TextBox>
+            <Button Content="Add Age" Margin="5" Click="Button_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

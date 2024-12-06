@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfBookCodeSample.ControlSample.stackpanel_samp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample.ControlSample"
+        mc:Ignorable="d"
+        Title="stackpanel_samp" Height="150" Width="800">
+    <Grid>
+        <GroupBox Header="选择" BorderBrush="Black" Margin="5">
+            <StackPanel Margin="5">
+                <CheckBox Content="A. 111"></CheckBox>
+                <CheckBox Content="B. 222"></CheckBox>
+                <CheckBox Content="C. 333"></CheckBox>
+                <CheckBox Content="D. 444"></CheckBox>
+                <CheckBox Content="E. 555"></CheckBox>
+                <CheckBox Content="A. 111"></CheckBox>
+                <CheckBox Content="B. 222"></CheckBox>
+                <CheckBox Content="C. 333"></CheckBox>
+                <CheckBox Content="D. 444"></CheckBox>
+                <CheckBox Content="E. 555"></CheckBox>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>

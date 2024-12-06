@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfBookCodeSample.grid_samp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample"
+        mc:Ignorable="d"
+        Title="grid_samp" Height="200" Width="340">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="4"/>
+            <ColumnDefinition Width="80"/>
+            <!-- This column will receive all remaining width -->
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="4"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4"/>
+            <RowDefinition Height="25"/>
+            <!-- This row will receive all remaining Height -->
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="please select" VerticalAlignment="Center"></TextBlock>
+        <ComboBox Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="4"></ComboBox>
+        <TextBox Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="5" BorderBrush="Black"></TextBox>
+    </Grid>
+</Window>
