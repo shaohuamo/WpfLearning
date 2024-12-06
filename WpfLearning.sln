@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfLabelAttribute", "WpfLabelAttribute\WpfLabelAttribute.csproj", "{73C46050-4137-42FB-AD2C-A6656A2B1EFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73C46050-4137-42FB-AD2C-A6656A2B1EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C46050-4137-42FB-AD2C-A6656A2B1EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C46050-4137-42FB-AD2C-A6656A2B1EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C46050-4137-42FB-AD2C-A6656A2B1EFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {079A2F3F-C22C-48A5-B42F-83290C6D0676}
+	EndGlobalSection
+EndGlobal
