@@ -5,8 +5,6 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfLabelAttribute", "WpfLabelAttribute\WpfLabelAttribute.csproj", "{73C46050-4137-42FB-AD2C-A6656A2B1EFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication1", "E:\IDM下载文件\压缩文件\深入浅出WPF-代码\WpfApplication1\WpfApplication1.csproj", "{31A33F81-C9F4-48C7-B4A9-B5D58A19CEE1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBookCodeSample", "WpfBookCodeSample\WpfBookCodeSample.csproj", "{8D008D5F-DB19-4ABE-98CE-D68CD0F5DC55}"
 EndProject
 Global
@@ -25,14 +23,6 @@ Global
 		{73C46050-4137-42FB-AD2C-A6656A2B1EFA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{73C46050-4137-42FB-AD2C-A6656A2B1EFA}.Release|x86.ActiveCfg = Release|Any CPU
 		{73C46050-4137-42FB-AD2C-A6656A2B1EFA}.Release|x86.Build.0 = Release|Any CPU
-		{31A33F81-C9F4-48C7-B4A9-B5D58A19CEE1}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{31A33F81-C9F4-48C7-B4A9-B5D58A19CEE1}.Debug|Any CPU.Build.0 = Debug|x86
-		{31A33F81-C9F4-48C7-B4A9-B5D58A19CEE1}.Debug|x86.ActiveCfg = Debug|x86
-		{31A33F81-C9F4-48C7-B4A9-B5D58A19CEE1}.Debug|x86.Build.0 = Debug|x86
-		{31A33F81-C9F4-48C7-B4A9-B5D58A19CEE1}.Release|Any CPU.ActiveCfg = Release|x86
-		{31A33F81-C9F4-48C7-B4A9-B5D58A19CEE1}.Release|Any CPU.Build.0 = Release|x86
-		{31A33F81-C9F4-48C7-B4A9-B5D58A19CEE1}.Release|x86.ActiveCfg = Release|x86
-		{31A33F81-C9F4-48C7-B4A9-B5D58A19CEE1}.Release|x86.Build.0 = Release|x86
 		{8D008D5F-DB19-4ABE-98CE-D68CD0F5DC55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8D008D5F-DB19-4ABE-98CE-D68CD0F5DC55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D008D5F-DB19-4ABE-98CE-D68CD0F5DC55}.Debug|x86.ActiveCfg = Debug|Any CPU

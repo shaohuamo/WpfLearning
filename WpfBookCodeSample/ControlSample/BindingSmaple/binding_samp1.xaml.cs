@@ -16,7 +16,7 @@ using WpfBookCodeSample.Model;
 namespace WpfBookCodeSample.ControlSample
 {
     /// <summary>
-    /// Interaction logic for binding_samp1.xaml
+    /// Binding source from code behind
     /// </summary>
     public partial class binding_samp1 : Window
     {
@@ -28,12 +28,15 @@ namespace WpfBookCodeSample.ControlSample
             stu = new Student();
             //stu.test += test1;
 
+            //Binding对象的Mode property的default value是BindingMode.Default
+            //对于不同的控件，BindingMode.Default是不同的
+            //可以参考官网文档
             Binding b = new Binding();
             b.Source = stu;
             b.Path = new PropertyPath("Name");
 
-            //在SetBinding方法中为stu中的PropertyChanged订阅了某个方法
-            BindingOperations.SetBinding(textBoxName, TextBlock.TextProperty, b);
+            //在SetBinding方法中为stu中的PropertyChanged事件订阅了某个方法
+            BindingOperations.SetBinding(textBoxName, TextBox.TextProperty, b);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
