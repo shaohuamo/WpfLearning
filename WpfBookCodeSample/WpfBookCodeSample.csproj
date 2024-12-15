@@ -58,6 +58,15 @@
     <Compile Include="ControlSample\BindingSmaple\binding_samp1.xaml.cs">
       <DependentUpon>binding_samp1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ControlSample\BindingSmaple\MultiLevelPathSample2_CollectionSource.xaml.cs">
+      <DependentUpon>MultiLevelPathSample2_CollectionSource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSample\BindingSmaple\MutilLevelPathSample1.xaml.cs">
+      <DependentUpon>MutilLevelPathSample1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSample\BindingSmaple\SliderBindTextBox.xaml.cs">
+      <DependentUpon>SliderBindTextBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ControlSample\dockpanel_samp.xaml.cs">
       <DependentUpon>dockpanel_samp.xaml</DependentUpon>
     </Compile>
@@ -71,6 +80,18 @@
       <DependentUpon>viewbox_samp.xaml</DependentUpon>
     </Compile>
     <Page Include="ControlSample\BindingSmaple\binding_samp1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlSample\BindingSmaple\MultiLevelPathSample2_CollectionSource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlSample\BindingSmaple\MutilLevelPathSample1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlSample\BindingSmaple\SliderBindTextBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

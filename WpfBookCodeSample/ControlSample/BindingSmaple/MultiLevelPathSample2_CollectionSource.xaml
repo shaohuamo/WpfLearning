@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfBookCodeSample.ControlSample.BindingSmaple.MultiLevelPathSample2_CollectionSource"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample.ControlSample.BindingSmaple"
+        mc:Ignorable="d"
+        Title="MultiLevelPathSample2_CollectionSource" Height="450" Width="300">
+    <StackPanel Height="280" Name="stackPanel1" Width="252">
+        <TextBox Height="23" Name="textBox1" Width="120" Margin="10" />
+        <TextBox Height="23" Name="textBox2" Width="120" Margin="10" />
+        <TextBox Height="23" Name="textBox3" Width="120" Margin="10" />
+    </StackPanel>
+</Window>
