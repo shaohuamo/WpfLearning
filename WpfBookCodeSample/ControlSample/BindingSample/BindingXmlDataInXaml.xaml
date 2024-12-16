@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfBookCodeSample.ControlSample.BindingSample.BindingXmlDataInXaml"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample.ControlSample.BindingSample"
+        mc:Ignorable="d"
+        Title="BindingXmlDataInXaml" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <XmlDataProvider x:Key="xdp" XPath="FileSystem/Folder">
+            <x:XData>
+                <FileSystem xmlns="">
+                    <Folder Name="Books">
+                        <Folder Name="Programming">
+                            <Folder Name="Windows">
+                                <Folder Name="WPF" />
+                                <Folder Name="Winform" />
+                                <Folder Name="ASP.NET" />
+                            </Folder>
+                        </Folder>
+                    </Folder>
+                    <Folder Name="Tools">
+                        <Folder Name="Development"/>
+                        <Folder Name="Designment"/>
+                        <Folder Name="Players"/>
+                    </Folder>
+                </FileSystem>
+            </x:XData>
+        </XmlDataProvider>
+    </Window.Resources>
+    <Grid>
+        <TreeView ItemsSource="{Binding Source={StaticResource ResourceKey=xdp}}">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding XPath=Folder}">
+                    <TextBlock Text="{Binding XPath=@Name}" />
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+    </Grid>
+</Window>

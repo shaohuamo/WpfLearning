@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfBookCodeSample.ControlSample.BindingSample.BindingWithoutPathAndSource"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample.ControlSample.BindingSample"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="BindingWithoutPathAndSource" Height="400" Width="400">
+    <StackPanel>
+        <StackPanel.DataContext>
+            <system:String>Hello DataContext</system:String>
+        </StackPanel.DataContext>
+        <TextBlock Height="23" Margin="15" Name="textBlock1" Text="{Binding}" />
+        <TextBlock Height="23" Margin="15" Name="textBlock2" Text="{Binding}" />
+        <TextBlock Height="23" Margin="15" Name="textBlock3" Text="{Binding}" />
+
+        <Button x:Name="btn" Content="OK" Click="btn_Click"></Button>
+    </StackPanel>
+</Window>

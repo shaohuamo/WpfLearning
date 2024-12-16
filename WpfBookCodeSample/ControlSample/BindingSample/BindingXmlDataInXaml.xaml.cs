@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace WpfBookCodeSample.ControlSample.BindingSample
 {
     /// <summary>
-    /// Interaction logic for MutilLevelPathSample.xaml
+    /// Interaction logic for BindingXmlDataInXaml.xaml
     /// </summary>
-    public partial class MutilLevelPathSample1 : Window
+    public partial class BindingXmlDataInXaml : Window
     {
-        public MutilLevelPathSample1()
+        public BindingXmlDataInXaml()
         {
             InitializeComponent();
         }

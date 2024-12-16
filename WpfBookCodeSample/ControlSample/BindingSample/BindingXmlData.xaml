@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfBookCodeSample.ControlSample.BindingSample.BindingXmlData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample.ControlSample.BindingSample"
+        mc:Ignorable="d"
+        Title="BindingXmlData" Height="397" Width="485" WindowStartupLocation="CenterScreen">
+    <StackPanel Background="LightBlue">
+        <ListView x:Name="listViewStudents" Width="396" Height="302" Margin="5">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" Width="80" 
+                                    DisplayMemberBinding="{Binding XPath=@id}" >
+                    </GridViewColumn>
+                    <GridViewColumn Header="Name" Width="150" 
+                                    DisplayMemberBinding="{Binding XPath=Name}" >
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </StackPanel>
+</Window>
