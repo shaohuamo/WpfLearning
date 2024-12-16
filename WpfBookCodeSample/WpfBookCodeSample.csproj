@@ -55,16 +55,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ControlSample\BindingSmaple\binding_samp1.xaml.cs">
+    <Compile Include="ControlSample\BindingSample\BindingWithoutPathSample.xaml.cs">
+      <DependentUpon>BindingWithoutPathSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSample\BindingSample\binding_samp1.xaml.cs">
       <DependentUpon>binding_samp1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSmaple\MultiLevelPathSample2_CollectionSource.xaml.cs">
+    <Compile Include="ControlSample\BindingSample\MultiLevelPathSample2_CollectionSource.xaml.cs">
       <DependentUpon>MultiLevelPathSample2_CollectionSource.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSmaple\MutilLevelPathSample1.xaml.cs">
+    <Compile Include="ControlSample\BindingSample\MultiLevelPathSample3_MultiLevelCollectionSource.xaml.cs">
+      <DependentUpon>MultiLevelPathSample3_MultiLevelCollectionSource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSample\BindingSample\MutilLevelPathSample1.xaml.cs">
       <DependentUpon>MutilLevelPathSample1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSmaple\SliderBindTextBox.xaml.cs">
+    <Compile Include="ControlSample\BindingSample\SliderBindTextBox.xaml.cs">
       <DependentUpon>SliderBindTextBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="ControlSample\dockpanel_samp.xaml.cs">
@@ -79,19 +85,27 @@
     <Compile Include="ControlSample\viewbox_samp.xaml.cs">
       <DependentUpon>viewbox_samp.xaml</DependentUpon>
     </Compile>
-    <Page Include="ControlSample\BindingSmaple\binding_samp1.xaml">
+    <Page Include="ControlSample\BindingSample\BindingWithoutPathSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSmaple\MultiLevelPathSample2_CollectionSource.xaml">
+    <Page Include="ControlSample\BindingSample\binding_samp1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSmaple\MutilLevelPathSample1.xaml">
+    <Page Include="ControlSample\BindingSample\MultiLevelPathSample2_CollectionSource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSmaple\SliderBindTextBox.xaml">
+    <Page Include="ControlSample\BindingSample\MultiLevelPathSample3_MultiLevelCollectionSource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlSample\BindingSample\MutilLevelPathSample1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlSample\BindingSample\SliderBindTextBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
