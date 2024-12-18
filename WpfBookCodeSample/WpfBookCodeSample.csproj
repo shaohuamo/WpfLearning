@@ -219,6 +219,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CodeSample\PropertySample\AttachedPropertySample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\PropertySample\DependencyPropertySample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -226,6 +234,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeSample\PropertySample\AttachedPropertySample.xaml.cs">
+      <DependentUpon>AttachedPropertySample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\PropertySample\DependencyPropertySample.xaml.cs">
+      <DependentUpon>DependencyPropertySample.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -244,6 +258,9 @@
     <Compile Include="Model\Calculator.cs" />
     <Compile Include="Model\Category.cs" />
     <Compile Include="Model\CategoryToSourceConverter.cs" />
+    <Compile Include="Model\DependencyObjectHuman.cs" />
+    <Compile Include="Model\DependencyObjectSchool.cs" />
+    <Compile Include="Model\DependencyObjectStudent.cs" />
     <Compile Include="Model\Employee.cs" />
     <Compile Include="CodeSample\ControlSample\P56ListBox.xaml.cs">
       <DependentUpon>P56ListBox.xaml</DependentUpon>
