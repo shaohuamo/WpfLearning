@@ -55,167 +55,167 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ControlSample\BindingSample\BindingADONETSource.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\BindingADONETSource.xaml.cs">
       <DependentUpon>BindingADONETSource.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\BindingDataConvert.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\BindingDataConvert.xaml.cs">
       <DependentUpon>BindingDataConvert.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\BindingDataValidation.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\BindingDataValidation.xaml.cs">
       <DependentUpon>BindingDataValidation.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\BindingItemsSource.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\BindingItemsSource.xaml.cs">
       <DependentUpon>BindingItemsSource.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\BindingItemsSourceWithDataTemplate.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\BindingItemsSourceWithDataTemplate.xaml.cs">
       <DependentUpon>BindingItemsSourceWithDataTemplate.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\BindingLINQ.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\BindingLINQ.xaml.cs">
       <DependentUpon>BindingLINQ.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\BindingObjectDataProvider.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\BindingObjectDataProvider.xaml.cs">
       <DependentUpon>BindingObjectDataProvider.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\BindingRelativeSource.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\BindingRelativeSource.xaml.cs">
       <DependentUpon>BindingRelativeSource.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\BindingSourceDataValidation.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\BindingSourceDataValidation.xaml.cs">
       <DependentUpon>BindingSourceDataValidation.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\BindingWithoutPathAndSource.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\BindingWithoutPathAndSource.xaml.cs">
       <DependentUpon>BindingWithoutPathAndSource.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\BindingWithoutPathSample.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\BindingWithoutPathSample.xaml.cs">
       <DependentUpon>BindingWithoutPathSample.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\BindingWithoutSource.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\BindingWithoutSource.xaml.cs">
       <DependentUpon>BindingWithoutSource.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\BindingXmlData.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\BindingXmlData.xaml.cs">
       <DependentUpon>BindingXmlData.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\BindingXmlDataInXaml.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\BindingXmlDataInXaml.xaml.cs">
       <DependentUpon>BindingXmlDataInXaml.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\binding_samp1.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\binding_samp1.xaml.cs">
       <DependentUpon>binding_samp1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\MultiBindingSample.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\MultiBindingSample.xaml.cs">
       <DependentUpon>MultiBindingSample.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\MultiLevelPathSample2_CollectionSource.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\MultiLevelPathSample2_CollectionSource.xaml.cs">
       <DependentUpon>MultiLevelPathSample2_CollectionSource.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\MultiLevelPathSample3_MultiLevelCollectionSource.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\MultiLevelPathSample3_MultiLevelCollectionSource.xaml.cs">
       <DependentUpon>MultiLevelPathSample3_MultiLevelCollectionSource.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\MultiLevelPathSample1.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\MultiLevelPathSample1.xaml.cs">
       <DependentUpon>MultiLevelPathSample1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\BindingSample\SliderBindTextBox.xaml.cs">
+    <Compile Include="CodeSample\BindingSample\SliderBindTextBox.xaml.cs">
       <DependentUpon>SliderBindTextBox.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\dockpanel_samp.xaml.cs">
+    <Compile Include="CodeSample\ControlSample\dockpanel_samp.xaml.cs">
       <DependentUpon>dockpanel_samp.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\grid_samp.xaml.cs">
+    <Compile Include="CodeSample\ControlSample\grid_samp.xaml.cs">
       <DependentUpon>grid_samp.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\stackpanel_samp.xaml.cs">
+    <Compile Include="CodeSample\ControlSample\stackpanel_samp.xaml.cs">
       <DependentUpon>stackpanel_samp.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ControlSample\viewbox_samp.xaml.cs">
+    <Compile Include="CodeSample\ControlSample\viewbox_samp.xaml.cs">
       <DependentUpon>viewbox_samp.xaml</DependentUpon>
     </Compile>
-    <Page Include="ControlSample\BindingSample\BindingADONETSource.xaml">
+    <Page Include="CodeSample\BindingSample\BindingADONETSource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\BindingDataConvert.xaml">
+    <Page Include="CodeSample\BindingSample\BindingDataConvert.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\BindingDataValidation.xaml">
+    <Page Include="CodeSample\BindingSample\BindingDataValidation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\BindingItemsSource.xaml">
+    <Page Include="CodeSample\BindingSample\BindingItemsSource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\BindingItemsSourceWithDataTemplate.xaml">
+    <Page Include="CodeSample\BindingSample\BindingItemsSourceWithDataTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\BindingLINQ.xaml">
+    <Page Include="CodeSample\BindingSample\BindingLINQ.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\BindingObjectDataProvider.xaml">
+    <Page Include="CodeSample\BindingSample\BindingObjectDataProvider.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\BindingRelativeSource.xaml">
+    <Page Include="CodeSample\BindingSample\BindingRelativeSource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\BindingSourceDataValidation.xaml">
+    <Page Include="CodeSample\BindingSample\BindingSourceDataValidation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\BindingWithoutPathAndSource.xaml">
+    <Page Include="CodeSample\BindingSample\BindingWithoutPathAndSource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\BindingWithoutPathSample.xaml">
+    <Page Include="CodeSample\BindingSample\BindingWithoutPathSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\BindingWithoutSource.xaml">
+    <Page Include="CodeSample\BindingSample\BindingWithoutSource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\BindingXmlData.xaml">
+    <Page Include="CodeSample\BindingSample\BindingXmlData.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\BindingXmlDataInXaml.xaml">
+    <Page Include="CodeSample\BindingSample\BindingXmlDataInXaml.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\binding_samp1.xaml">
+    <Page Include="CodeSample\BindingSample\binding_samp1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\MultiBindingSample.xaml">
+    <Page Include="CodeSample\BindingSample\MultiBindingSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\MultiLevelPathSample2_CollectionSource.xaml">
+    <Page Include="CodeSample\BindingSample\MultiLevelPathSample2_CollectionSource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\MultiLevelPathSample3_MultiLevelCollectionSource.xaml">
+    <Page Include="CodeSample\BindingSample\MultiLevelPathSample3_MultiLevelCollectionSource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\MultiLevelPathSample1.xaml">
+    <Page Include="CodeSample\BindingSample\MultiLevelPathSample1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\BindingSample\SliderBindTextBox.xaml">
+    <Page Include="CodeSample\BindingSample\SliderBindTextBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\dockpanel_samp.xaml">
+    <Page Include="CodeSample\ControlSample\dockpanel_samp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\grid_samp.xaml">
+    <Page Include="CodeSample\ControlSample\grid_samp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\stackpanel_samp.xaml">
+    <Page Include="CodeSample\ControlSample\stackpanel_samp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -231,11 +231,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="ControlSample\P56ListBox.xaml">
+    <Page Include="CodeSample\ControlSample\P56ListBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ControlSample\viewbox_samp.xaml">
+    <Page Include="CodeSample\ControlSample\viewbox_samp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -245,7 +245,7 @@
     <Compile Include="Model\Category.cs" />
     <Compile Include="Model\CategoryToSourceConverter.cs" />
     <Compile Include="Model\Employee.cs" />
-    <Compile Include="ControlSample\P56ListBox.xaml.cs">
+    <Compile Include="CodeSample\ControlSample\P56ListBox.xaml.cs">
       <DependentUpon>P56ListBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\MultiBindingConverter.cs" />
