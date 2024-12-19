@@ -1,18 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
-namespace WpfBookCodeSample.ControlSample.BindingSample
+namespace WpfBookCodeSample.CodeSample.BindingSample
 {
     /// <summary>
     /// Interaction logic for BindingWithoutSource.xaml
@@ -23,12 +11,5 @@ namespace WpfBookCodeSample.ControlSample.BindingSample
         {
             InitializeComponent();
         }
-    }
-
-    public class Student
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }
     }
 }

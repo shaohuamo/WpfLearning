@@ -3,21 +3,12 @@ using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using System.Xml.Linq;
 using WpfBookCodeSample.Model;
 using Path = System.IO.Path;
 
-namespace WpfBookCodeSample.ControlSample.BindingSample
+namespace WpfBookCodeSample.CodeSample.BindingSample
 {
     /// <summary>
     /// Interaction logic for BindingLINQ.xaml
@@ -53,7 +44,7 @@ namespace WpfBookCodeSample.ControlSample.BindingSample
             DataTable dtInfo = CreateDataTable();
             this.listView1.ItemsSource = from row in dtInfo.Rows.Cast<DataRow>()
                 where Convert.ToString(row["Name"]).StartsWith("T")
-                select new Student()
+                select new Teacher()
                 {
                     Id = Convert.ToInt32(row["Id"]),
                     Name = Convert.ToString(row["Name"]),
@@ -70,7 +61,7 @@ namespace WpfBookCodeSample.ControlSample.BindingSample
 
             this.listView1.ItemsSource = from element in xd.Descendants("Teacher")
                 where element.Attribute("Name").Value.StartsWith("T")
-                select new Student()
+                select new Teacher()
                 {
                     Name = element.Attribute("Name").Value,
                     Id = Convert.ToInt32(element.Attribute("Id").Value),

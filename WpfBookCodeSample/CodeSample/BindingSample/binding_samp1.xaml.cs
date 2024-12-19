@@ -3,7 +3,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using WpfBookCodeSample.Model;
 
-namespace WpfBookCodeSample.ControlSample.BindingSample
+namespace WpfBookCodeSample.CodeSample.BindingSample
 {
     /// <summary>
     /// Binding source from code behind
@@ -16,7 +16,6 @@ namespace WpfBookCodeSample.ControlSample.BindingSample
             InitializeComponent();
 
             stu = new Student();
-            //stu.test += test1;
 
             //Binding对象的Mode property的default value是BindingMode.Default
             //对于不同的控件，BindingMode.Default是不同的
