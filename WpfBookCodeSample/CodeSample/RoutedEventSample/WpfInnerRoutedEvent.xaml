@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfBookCodeSample.CodeSample.RoutedEventSample.WpfInnerRoutedEvent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample.CodeSample.RoutedEventSample"
+        mc:Ignorable="d"
+        Title="WpfInnerRoutedEvent" Height="328" Width="426" WindowStartupLocation="CenterScreen">
+    <!--在gridRoot上添加Button.Click事件的侦听器-->
+    <!--使用ButtonBase.Click时可以获得智能提示-->
+    <Grid x:Name="gridRoot" Background="Lime" Button.Click="ButtonClicked">
+        <Grid x:Name="gridA" Margin="10" Background="Blue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Canvas x:Name="canvasLeft" Grid.Column="0" Background="Red" Margin="10">
+                <Button x:Name="buttonLeft" Content="Left" Height="100"  Width="40" Margin="10"/>
+            </Canvas>
+            <Canvas x:Name="canvasRight" Grid.Column="1" Margin="10" Background="Yellow">
+                <Button x:Name="buttonRight" Content="Right" Height="100" Width="40" Margin="10"/>
+            </Canvas>
+        </Grid>
+    </Grid>
+</Window>

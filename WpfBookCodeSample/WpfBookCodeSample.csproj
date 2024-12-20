@@ -227,6 +227,26 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CodeSample\RoutedEventSample\AttachedEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\RoutedEventSample\CustomRoutedEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\RoutedEventSample\SourceAndOriginalSourceSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\RoutedEventSample\WpfInnerRoutedEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControl\MyUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -240,6 +260,21 @@
     </Compile>
     <Compile Include="CodeSample\PropertySample\DependencyPropertySample.xaml.cs">
       <DependentUpon>DependencyPropertySample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\RoutedEventSample\AttachedEvent.xaml.cs">
+      <DependentUpon>AttachedEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\RoutedEventSample\CustomRoutedEvent.xaml.cs">
+      <DependentUpon>CustomRoutedEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\RoutedEventSample\SourceAndOriginalSourceSample.xaml.cs">
+      <DependentUpon>SourceAndOriginalSourceSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\RoutedEventSample\WpfInnerRoutedEvent.xaml.cs">
+      <DependentUpon>WpfInnerRoutedEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\MyUserControl.xaml.cs">
+      <DependentUpon>MyUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -268,10 +303,13 @@
     <Compile Include="Model\MultiBindingConverter.cs" />
     <Compile Include="Model\Plane.cs" />
     <Compile Include="Model\RangeValidationRule.cs" />
+    <Compile Include="Model\ReportTimeEventArgs.cs" />
     <Compile Include="Model\State.cs" />
     <Compile Include="Model\StateToNullableBoolConverter.cs" />
     <Compile Include="Model\Student.cs" />
+    <Compile Include="Model\StudentForAttachedEvent.cs" />
     <Compile Include="Model\Teacher.cs" />
+    <Compile Include="Model\TimeButton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
