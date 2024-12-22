@@ -368,18 +368,18 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="XML\TestData.xml" />
+    <Resource Include="Resources\XML\TestData.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\tulip_farm.jpg" />
+    <Resource Include="Resources\Images\tulip_farm.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="XML\StudentData.xml" />
+    <Resource Include="Resources\XML\StudentData.xml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Resource Include="ICONS\Bomber.png" />
-    <Resource Include="ICONS\Fighter.png" />
+    <Resource Include="Resources\ICONS\Bomber.png" />
+    <Resource Include="Resources\ICONS\Fighter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

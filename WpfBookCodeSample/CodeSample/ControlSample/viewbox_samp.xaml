@@ -9,11 +9,8 @@
     <Grid>
         <!--Button用于对比，Button在Viewbox之外是无法缩放的-->
         <!--<Button Content="Show" Width="120" Height="80" ></Button>-->
-        <Viewbox MaxWidth="500" MaxHeight="500" StretchDirection="Both" Stretch="Uniform" Visibility="Visible" Opacity="0">
-            <Image Stretch="None">
-                <Image.Source>
-                    <BitmapImage UriSource="\images\tulip_farm.jpg"/>
-                </Image.Source>
+        <Viewbox MaxWidth="500" MaxHeight="500" StretchDirection="Both" Stretch="Uniform" Visibility="Visible" Opacity="1">
+            <Image x:Name="img" Stretch="None" Source="../../Resources/Images/tulip_farm.jpg">
             </Image>
         </Viewbox>
     </Grid>

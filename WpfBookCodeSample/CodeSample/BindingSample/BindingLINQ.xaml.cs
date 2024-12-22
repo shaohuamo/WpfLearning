@@ -15,7 +15,7 @@ namespace WpfBookCodeSample.CodeSample.BindingSample
     /// </summary>
     public partial class BindingLINQ : Window
     {
-        private const string FILE_PATH = @"../../XML/TestData.xml";
+        private const string FILE_PATH = @"../../Resources/XML/TestData.xml";
 
         public BindingLINQ()
         {
@@ -55,17 +55,15 @@ namespace WpfBookCodeSample.CodeSample.BindingSample
 
         private void BindingDataByXml()
         {
-            var currentPath = Directory.GetCurrentDirectory();
+            XDocument xd = XDocument.Load(FILE_PATH);
 
-            XDocument xd = XDocument.Load(Path.Combine(@currentPath, FILE_PATH));
-
-            this.listView1.ItemsSource = from element in xd.Descendants("Teacher")
+            listView1.ItemsSource = from element in xd.Descendants("Teacher")
                 where element.Attribute("Name").Value.StartsWith("T")
                 select new Teacher()
                 {
-                    Name = element.Attribute("Name").Value,
-                    Id = Convert.ToInt32(element.Attribute("Id").Value),
-                    Age = Convert.ToInt32(element.Attribute("Age").Value)
+                    Name = element.Attribute("Name")?.Value,
+                    Id = Convert.ToInt32(element.Attribute("Id")?.Value),
+                    Age = Convert.ToInt32(element.Attribute("Age")?.Value)
                 };
         }
 
@@ -81,11 +79,9 @@ namespace WpfBookCodeSample.CodeSample.BindingSample
             };
             dt.Columns.AddRange(columns);
 
-            DataRow workRow;
-
             for (int i = 0; i <= 9; i++)
             {
-                workRow = dt.NewRow();
+                var workRow = dt.NewRow();
                 workRow[0] = i;
                 workRow[1] = "Tim" + i;
                 workRow[2] = 20 + i;

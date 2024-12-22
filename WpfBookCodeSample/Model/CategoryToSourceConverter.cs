@@ -19,10 +19,10 @@ namespace WpfBookCodeSample.Model
                 switch (category)
                 {
                     case Category.Bomber:
-                        return @"../../ICONS/Bomber.png";
+                        return @"../../Resources/ICONS/Bomber.png";
 
                     case Category.Fighter:
-                        return @"../../ICONS/Fighter.png";
+                        return @"../../Resources/ICONS/Fighter.png";
 
                     default:
                         return null;
