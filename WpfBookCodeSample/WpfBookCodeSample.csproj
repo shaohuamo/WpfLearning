@@ -115,6 +115,15 @@
     <Compile Include="CodeSample\BindingSample\SliderBindTextBox.xaml.cs">
       <DependentUpon>SliderBindTextBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CodeSample\CommandSample\CommandParameterSample.xaml.cs">
+      <DependentUpon>CommandParameterSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\CommandSample\CustomCommandSample.xaml.cs">
+      <DependentUpon>CustomCommandSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\CommandSample\RoutedCommandSample.xaml.cs">
+      <DependentUpon>RoutedCommandSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CodeSample\ControlSample\dockpanel_samp.xaml.cs">
       <DependentUpon>dockpanel_samp.xaml</DependentUpon>
     </Compile>
@@ -207,6 +216,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CodeSample\CommandSample\CommandParameterSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\CommandSample\CustomCommandSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\CommandSample\RoutedCommandSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CodeSample\ControlSample\dockpanel_samp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -243,6 +264,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CustomControl\MiMniView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CustomControl\MyUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -273,9 +298,16 @@
     <Compile Include="CodeSample\RoutedEventSample\WpfInnerRoutedEvent.xaml.cs">
       <DependentUpon>WpfInnerRoutedEvent.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CommandHelper\CustomCommandHelper.cs" />
+    <Compile Include="CustomCommandSource\MyCommandSource.cs" />
+    <Compile Include="CustomCommand\ClearCommand.cs" />
+    <Compile Include="CustomControl\MiMniView.xaml.cs">
+      <DependentUpon>MiMniView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CustomControl\MyUserControl.xaml.cs">
       <DependentUpon>MyUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomUIElementInterface\IView.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

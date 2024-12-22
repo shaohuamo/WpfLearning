@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfBookCodeSample.CodeSample.CommandSample.CustomCommandSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample.CodeSample.CommandSample"
+        xmlns:customControl="clr-namespace:WpfBookCodeSample.CustomControl"
+        xmlns:customCommandSource="clr-namespace:WpfBookCodeSample.CustomCommandSource"
+        mc:Ignorable="d"
+        Title="CustomCommandSample" Height="300" Width="300" WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <customCommandSource:MyCommandSource x:Name="ctrlClear">
+            <!--使用简单的文本作为命令源的显示内容-->
+            <TextBlock Text="清除" Width="80" FontSize="16" TextAlignment="Center" Background="LightGreen"></TextBlock>
+        </customCommandSource:MyCommandSource>
+        <customControl:MiMniView x:Name="miniView" />
+    </StackPanel>
+</Window>
