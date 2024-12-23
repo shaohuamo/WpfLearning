@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfBookCodeSample.CodeSample.ResourceSample.WpfResourceSample.WpfResource"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample.CodeSample.ResourceSample.WpfResourceSample"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d" Loaded="Window_Loaded"
+        Title="WpfResource" Height="300" Width="400" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+            <system:String x:Key="str">沉舟侧畔千帆过，病树前头万木春。</system:String>
+            <system:Double x:Key="db">3.1415926</system:Double>
+    </Window.Resources>
+    <StackPanel>
+        <TextBlock x:Name="TextBlock1" Text="{ StaticResource str}"></TextBlock>
+
+        <!--Text属性是string类型的，而db对应的值是double类型的，因此会抛出类型不一致异常-->
+        <!--<TextBlock Text="{StaticResource ResourceKey=db}"></TextBlock>-->
+
+        <!--访问Application.Resources-->
+        <TextBlock x:Name="TextBlock2" Text="{StaticResource app}"></TextBlock>
+
+        <TextBlock x:Name="TextBlock3"></TextBlock>
+        <TextBlock x:Name="TextBlock4"></TextBlock>
+    </StackPanel>
+</Window>

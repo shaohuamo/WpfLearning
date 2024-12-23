@@ -248,6 +248,26 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CodeSample\ResourceSample\BinaryResourceSample\ImageBinaryResource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\ResourceSample\BinaryResourceSample\StringBinaryResource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\ResourceSample\WpfResourceSample\ResourcesInSeparateFile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\ResourceSample\WpfResourceSample\StaticVSDynamic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\ResourceSample\WpfResourceSample\WpfResource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CodeSample\RoutedEventSample\AttachedEvent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -286,6 +306,21 @@
     <Compile Include="CodeSample\PropertySample\DependencyPropertySample.xaml.cs">
       <DependentUpon>DependencyPropertySample.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CodeSample\ResourceSample\BinaryResourceSample\ImageBinaryResource.xaml.cs">
+      <DependentUpon>ImageBinaryResource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\ResourceSample\BinaryResourceSample\StringBinaryResource.xaml.cs">
+      <DependentUpon>StringBinaryResource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\ResourceSample\WpfResourceSample\ResourcesInSeparateFile.xaml.cs">
+      <DependentUpon>ResourcesInSeparateFile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\ResourceSample\WpfResourceSample\StaticVSDynamic.xaml.cs">
+      <DependentUpon>StaticVSDynamic.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\ResourceSample\WpfResourceSample\WpfResource.xaml.cs">
+      <DependentUpon>WpfResource.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CodeSample\RoutedEventSample\AttachedEvent.xaml.cs">
       <DependentUpon>AttachedEvent.xaml</DependentUpon>
     </Compile>
@@ -319,6 +354,10 @@
     <Page Include="CodeSample\ControlSample\viewbox_samp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\XML\ShinyRed.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -356,7 +395,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

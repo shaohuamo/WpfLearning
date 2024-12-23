@@ -2,8 +2,9 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:WpfBookCodeSample"
-             StartupUri="/CodeSample/ControlSample/viewbox_samp.xaml">
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             StartupUri="/CodeSample/ResourceSample/BinaryResourceSample/ImageBinaryResource.xaml">
     <Application.Resources>
-
+        <system:String x:Key="app" >this Message is from App.xaml</system:String>
     </Application.Resources>
 </Application>
