@@ -284,6 +284,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CodeSample\TemplateSample\ControlTemplateSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\TemplateSample\DataTemplateSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\TemplateSample\PanelTemplateOfItemsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CustomControl\MiMniView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -333,6 +345,15 @@
     <Compile Include="CodeSample\RoutedEventSample\WpfInnerRoutedEvent.xaml.cs">
       <DependentUpon>WpfInnerRoutedEvent.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CodeSample\TemplateSample\ControlTemplateSample.xaml.cs">
+      <DependentUpon>ControlTemplateSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\TemplateSample\DataTemplateSample.xaml.cs">
+      <DependentUpon>DataTemplateSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\TemplateSample\PanelTemplateOfItemsControl.xaml.cs">
+      <DependentUpon>PanelTemplateOfItemsControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CommandHelper\CustomCommandHelper.cs" />
     <Compile Include="CustomCommandSource\MyCommandSource.cs" />
     <Compile Include="CustomCommand\ClearCommand.cs" />
@@ -361,7 +382,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\AutomakerToLogoPathConverter.cs" />
     <Compile Include="Model\Calculator.cs" />
+    <Compile Include="Model\Car.cs" />
     <Compile Include="Model\Category.cs" />
     <Compile Include="Model\CategoryToSourceConverter.cs" />
     <Compile Include="Model\DependencyObjectHuman.cs" />
@@ -372,6 +395,7 @@
       <DependentUpon>P56ListBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\MultiBindingConverter.cs" />
+    <Compile Include="Model\NameToPhotoPathConverter.cs" />
     <Compile Include="Model\Plane.cs" />
     <Compile Include="Model\RangeValidationRule.cs" />
     <Compile Include="Model\ReportTimeEventArgs.cs" />
@@ -415,10 +439,17 @@
   <ItemGroup>
     <Resource Include="Resources\XML\StudentData.xml" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Resource Include="Resources\ICONS\Bomber.png" />
     <Resource Include="Resources\ICONS\Fighter.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Diablo.jpg" />
+    <Resource Include="Resources\Images\Gallardo.jpg" />
+    <Resource Include="Resources\Images\Lamborghini.jpg" />
+    <Resource Include="Resources\Images\Murcielago.jpg" />
+    <Resource Include="Resources\Images\Reventon.jpg" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
