@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:WpfBookCodeSample"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
              xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av"
-             StartupUri="/CodeSample/TemplateSample/ControlTemplateSample.xaml">
+             StartupUri="/CodeSample/TemplateSample/DataTemplateSample.xaml">
     <Application.Resources>
         <system:String x:Key="app" >this Message is from App.xaml</system:String>
 
@@ -26,7 +26,9 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type TextBox}">
-                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True" CornerRadius="5">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True" 
+                                CornerRadius="5">
+                            <!--添加了CornerRadius="5"-->
                             <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
                         </Border>
                         <ControlTemplate.Triggers>

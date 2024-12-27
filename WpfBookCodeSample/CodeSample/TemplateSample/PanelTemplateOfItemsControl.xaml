@@ -16,6 +16,8 @@
         <ListBox>
             <!--ItemsPanel-->
             <ListBox.ItemsPanel>
+                <!--An ItemsPanelTemplate is neither a DataTemplate nor a ControlTemplate; 
+                it is its own distinct template type in WPF-->
                 <ItemsPanelTemplate>
                     <StackPanel Orientation="Horizontal"></StackPanel>
                 </ItemsPanelTemplate>

@@ -21,7 +21,6 @@ namespace WpfBookCodeSample.CodeSample.BindingSample
 
         private void BindingInfo()
         {
-            var currentPath = Directory.GetCurrentDirectory();
             var xdp = new XmlDataProvider
             {
                 Source = new Uri(FILE_PATH,UriKind.Relative),
