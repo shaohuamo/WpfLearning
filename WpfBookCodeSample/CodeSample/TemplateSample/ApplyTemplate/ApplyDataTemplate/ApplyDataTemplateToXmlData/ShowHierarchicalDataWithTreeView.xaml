@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfBookCodeSample.CodeSample.TemplateSample.ApplyTemplate.ApplyDataTemplate.ApplyDataTemplateToXmlData.ShowHierarchicalDataWithTreeView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample.CodeSample.TemplateSample.ApplyTemplate.ApplyDataTemplate.ApplyDataTemplateToXmlData"
+        mc:Ignorable="d"
+        Title="ShowHierarchicalDataWithTreeView" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <!--数据源-->
+        <XmlDataProvider x:Key="ds" Source="../../../../../Resources/XML/DataForTreeView.xml"
+                         XPath="Data/Grade"></XmlDataProvider>
+        <!--年级模版-->
+        <HierarchicalDataTemplate DataType="Grade" ItemsSource="{Binding XPath=Class}">
+            <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+        </HierarchicalDataTemplate>
+        <!--班级模版-->
+        <HierarchicalDataTemplate DataType="Class" ItemsSource="{Binding XPath=Group}">
+            <RadioButton Content="{Binding XPath=@Name}"></RadioButton>
+        </HierarchicalDataTemplate>
+        <!--小组模版-->
+        <HierarchicalDataTemplate DataType="Group" ItemsSource="{Binding XPath=Student}">
+            <CheckBox Content="{Binding XPath=@Name}"></CheckBox>
+        </HierarchicalDataTemplate>
+        <!--学生模版-->
+        <HierarchicalDataTemplate DataType="Student">
+            <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+        </HierarchicalDataTemplate>
+    </Window.Resources>
+    <Grid>
+        <!--使用TreeView显示多层级、不同类型的数据-->
+        <TreeView Margin="5" ItemsSource="{Binding Source={StaticResource ds}}"></TreeView>
+    </Grid>
+</Window>

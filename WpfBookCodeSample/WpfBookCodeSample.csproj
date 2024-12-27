@@ -284,6 +284,38 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CodeSample\TemplateSample\AccessControlsInTemplate\AccessControlsInControlTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\TemplateSample\AccessControlsInTemplate\AccessControlsInDataTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\TemplateSample\AccessControlsInTemplate\AccessControlsInDifferentDataTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\TemplateSample\ApplyTemplate\ApplyControlTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\TemplateSample\ApplyTemplate\ApplyDataTemplate\ApplyDataTemplateToCertainDataType.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\TemplateSample\ApplyTemplate\ApplyDataTemplate\ApplyDataTemplateToXmlData\ShowHierarchicalDataWithMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\TemplateSample\ApplyTemplate\ApplyDataTemplate\ApplyDataTemplateToXmlData\ShowHierarchicalDataWithTreeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\TemplateSample\ApplyTemplate\ApplyDataTemplate\ApplyDataTemplateToXmlData\SimpleSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CodeSample\TemplateSample\ControlTemplateSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -345,6 +377,30 @@
     <Compile Include="CodeSample\RoutedEventSample\WpfInnerRoutedEvent.xaml.cs">
       <DependentUpon>WpfInnerRoutedEvent.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CodeSample\TemplateSample\AccessControlsInTemplate\AccessControlsInControlTemplate.xaml.cs">
+      <DependentUpon>AccessControlsInControlTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\TemplateSample\AccessControlsInTemplate\AccessControlsInDataTemplate.xaml.cs">
+      <DependentUpon>AccessControlsInDataTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\TemplateSample\AccessControlsInTemplate\AccessControlsInDifferentDataTemplate.xaml.cs">
+      <DependentUpon>AccessControlsInDifferentDataTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\TemplateSample\ApplyTemplate\ApplyControlTemplate.xaml.cs">
+      <DependentUpon>ApplyControlTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\TemplateSample\ApplyTemplate\ApplyDataTemplate\ApplyDataTemplateToCertainDataType.xaml.cs">
+      <DependentUpon>ApplyDataTemplateToCertainDataType.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\TemplateSample\ApplyTemplate\ApplyDataTemplate\ApplyDataTemplateToXmlData\ShowHierarchicalDataWithMenu.xaml.cs">
+      <DependentUpon>ShowHierarchicalDataWithMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\TemplateSample\ApplyTemplate\ApplyDataTemplate\ApplyDataTemplateToXmlData\ShowHierarchicalDataWithTreeView.xaml.cs">
+      <DependentUpon>ShowHierarchicalDataWithTreeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\TemplateSample\ApplyTemplate\ApplyDataTemplate\ApplyDataTemplateToXmlData\SimpleSample.xaml.cs">
+      <DependentUpon>SimpleSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CodeSample\TemplateSample\ControlTemplateSample.xaml.cs">
       <DependentUpon>ControlTemplateSample.xaml</DependentUpon>
     </Compile>
@@ -396,6 +452,7 @@
     </Compile>
     <Compile Include="Model\MultiBindingConverter.cs" />
     <Compile Include="Model\NameToPhotoPathConverter.cs" />
+    <Compile Include="Model\Person.cs" />
     <Compile Include="Model\Plane.cs" />
     <Compile Include="Model\RangeValidationRule.cs" />
     <Compile Include="Model\ReportTimeEventArgs.cs" />
@@ -405,6 +462,7 @@
     <Compile Include="Model\StudentForAttachedEvent.cs" />
     <Compile Include="Model\Teacher.cs" />
     <Compile Include="Model\TimeButton.cs" />
+    <Compile Include="Model\Unit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -449,6 +507,12 @@
     <Resource Include="Resources\Images\Lamborghini.jpg" />
     <Resource Include="Resources\Images\Murcielago.jpg" />
     <Resource Include="Resources\Images\Reventon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\XML\DataForTreeView.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\XML\DataForMenu.xml" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

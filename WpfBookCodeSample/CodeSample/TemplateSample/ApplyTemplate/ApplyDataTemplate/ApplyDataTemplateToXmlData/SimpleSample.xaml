@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfBookCodeSample.CodeSample.TemplateSample.ApplyTemplate.ApplyDataTemplate.ApplyDataTemplateToXmlData.SimpleSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample.CodeSample.TemplateSample.ApplyTemplate.ApplyDataTemplate"
+        mc:Ignorable="d"
+        Title="ApplyDataTemplateToXmlDataSampleOne" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <!--Xml中的元素名可以作为DataType | ReSharper中DataType="XUnit"会报错，无视即可-->
+        <DataTemplate DataType="XUnit">
+            <Grid>
+                <StackPanel Orientation="Horizontal">
+                    <Grid>
+                        <Rectangle Fill="Orange"  Stroke="Yellow"
+                                   Width="{Binding XPath=@Price}">
+                        </Rectangle>
+                        <TextBlock Text="{Binding XPath=@Year}"/>
+                    </Grid>
+                    <TextBlock Text="{Binding XPath=@Price}" Margin="5,0"></TextBlock>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+        <!--数据源-->
+        <!--XPath指定向外部暴露的一组数据-->
+        <XmlDataProvider x:Key="ds" XPath="XUnits/XUnit">
+            <x:XData>
+                <!--xmlns=""移除所有的Namespace-->
+                <XUnits xmlns="">
+                    <XUnit Price="100" Year="2001"></XUnit>
+                    <XUnit Price="120" Year="2002"></XUnit>
+                    <XUnit Price="140" Year="2003"></XUnit>
+                    <XUnit Price="180" Year="2004"></XUnit>
+                    <XUnit Price="150" Year="2005"></XUnit>
+                    <XUnit Price="200" Year="2006"></XUnit>
+                </XUnits>
+            </x:XData>
+        </XmlDataProvider>
+    </Window.Resources>
+    <StackPanel>
+        <!--XmlDataProvider使用Binding-->
+        <ListBox ItemsSource="{Binding Source={StaticResource ds}}"></ListBox>
+        <ComboBox ItemsSource="{Binding Source={StaticResource ds}}" Margin="5,0"></ComboBox>
+    </StackPanel>
+</Window>

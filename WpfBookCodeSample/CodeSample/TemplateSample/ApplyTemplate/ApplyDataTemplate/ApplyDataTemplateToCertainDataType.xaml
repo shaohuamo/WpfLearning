@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfBookCodeSample.CodeSample.TemplateSample.ApplyTemplate.ApplyDataTemplate.ApplyDataTemplateToCertainDataType"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample.CodeSample.TemplateSample.ApplyTemplate.ApplyDataTemplate"
+        xmlns:model="clr-namespace:WpfBookCodeSample.Model"
+        xmlns:collections="clr-namespace:System.Collections;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="ApplyDataTemplateToCertainDataType" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <!--DataTemplate(通过DataType属性将DataTemplate应用到指定的类型上)-->
+        <!--将Type的值作为ResourceDictionary中的Key-->
+        <DataTemplate DataType="{x:Type model:Unit}">
+            <Grid>
+                <StackPanel Orientation="Horizontal">
+                    <Grid>
+                        <Rectangle Stroke="Yellow" Fill="Orange" Width="{Binding Price}"></Rectangle>
+                        <TextBlock Text="{Binding Year}"></TextBlock>
+                    </Grid>
+                    <TextBlock Text="{Binding Price}" Margin="5,0"></TextBlock>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+        <!--数据源-->
+        <collections:ArrayList x:Key="ds">
+            <model:Unit Year="2001 Year" Price="100"></model:Unit>
+            <model:Unit Year="2002 Year" Price="110"></model:Unit>
+            <model:Unit Year="2003 Year" Price="120"></model:Unit>
+            <model:Unit Year="2004 Year" Price="130"></model:Unit>
+            <model:Unit Year="2005 Year" Price="140"></model:Unit>
+            <model:Unit Year="2006 Year" Price="150"></model:Unit>
+        </collections:ArrayList>
+    </Window.Resources>
+    <!--主窗体-->
+    <StackPanel>
+        <ListBox ItemsSource="{StaticResource ds}"></ListBox>
+        <ComboBox ItemsSource="{StaticResource ds}" Margin="5"></ComboBox>
+    </StackPanel>
+</Window>

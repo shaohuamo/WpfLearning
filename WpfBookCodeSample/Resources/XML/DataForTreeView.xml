@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data xmlns="">
+		<Grade Name="一年级">
+				<Class Name="甲班">
+						<Group Name="A组"></Group>
+						<Group Name="B组"></Group>
+						<Group Name="C组">
+							<Student Name="张三"></Student>
+							<Student Name="李四"></Student>
+						</Group>
+				</Class>
+				<Class Name="乙班">
+						<Group Name="A组"></Group>
+						<Group Name="B组"></Group>
+						<Group Name="C组"></Group>
+				</Class>
+		</Grade>
+		<Grade Name="二年级">
+				<Class Name="甲班">
+						<Group Name="A组"></Group>
+						<Group Name="B组"></Group>
+						<Group Name="C组"></Group>
+				</Class>
+				<Class Name="乙班">
+						<Group Name="A组"></Group>
+						<Group Name="B组"></Group>
+						<Group Name="C组"></Group>
+				</Class>
+		</Grade>
+</Data>

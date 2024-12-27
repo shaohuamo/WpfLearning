@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfBookCodeSample.CodeSample.TemplateSample.ApplyTemplate.ApplyDataTemplate.ApplyDataTemplateToXmlData.ShowHierarchicalDataWithMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample.CodeSample.TemplateSample.ApplyTemplate.ApplyDataTemplate.ApplyDataTemplateToXmlData"
+        mc:Ignorable="d"
+        Title="ShowHierarchicalDataWithMenu" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <!--数据源-->
+        <XmlDataProvider x:Key="ds" Source="../../../../../Resources/XML/DataForMenu.xml"
+                         XPath="Data/Operation"></XmlDataProvider>
+        <!--Operation模板-->
+        <HierarchicalDataTemplate DataType="Operation"
+                                  ItemsSource="{Binding XPath=Operation}">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding XPath=@Name}" Margin="10,0"></TextBlock>
+                <TextBlock Text="{Binding XPath=@Gesture}"></TextBlock>
+            </StackPanel>
+        </HierarchicalDataTemplate>
+    </Window.Resources>
+    <StackPanel MenuItem.Click="StackPanel_Click">
+        <Menu ItemsSource="{Binding Source={StaticResource ds}}"></Menu>
+    </StackPanel>
+</Window>

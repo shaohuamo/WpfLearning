@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data xmlns="">
+		<Operation Name="File" Gesture="F">
+			<Operation Name="New" Gesture="N">
+				<Operation Name="Project" Gesture="Control + P"/>
+				<Operation Name="Website" Gesture="Control + W"/>
+				<Operation Name="Document" Gesture="Control + D"/>
+			</Operation>
+			<Operation Name="Save" Gesture="S"/>
+			<Operation Name="Print" Gesture="P"/>
+			<Operation Name="Exist" Gesture="X"/>
+		</Operation>
+	<Operation Name="Edit" Gesture="E">
+		<Operation Name="Copy" Gesture="Control + C"/>
+		<Operation Name="Cut" Gesture="Control + X"/>
+		<Operation Name="Paste" Gesture="Control + V"/>
+	</Operation>
+</Data>
