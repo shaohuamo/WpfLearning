@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfBookCodeSample.CodeSample.StyleSample.Trigger.MultiDataTriggerSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample.CodeSample.StyleSample.Trigger"
+        mc:Ignorable="d"
+        Title="MultiDataTriggerSample" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="ListBoxItem">
+            <!--使用Style设置DataTemplate-->
+            <Setter Property="ContentTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Id}" Width="60"></TextBlock>
+                            <TextBlock Text="{Binding Name}" Width="120"></TextBlock>
+                            <TextBlock Text="{Binding Skill}" Width="60"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+            <!--设置Trigger-->
+            <Style.Triggers>
+                <!--满足多个数据条件才能触发的MultiDataTrigger-->
+                <MultiDataTrigger>
+                    <!--当Person对象同时满足Id为2、Name为Darren的时候，条目就高亮显示-->
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Path=Id}" Value="2"></Condition>
+                        <Condition Binding="{Binding Path=Name}" Value="Darren"></Condition>
+                    </MultiDataTrigger.Conditions>
+                    <MultiDataTrigger.Setters>
+                        <Setter Property="Background" Value="Orange"></Setter>
+                    </MultiDataTrigger.Setters>
+                </MultiDataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <ListBox x:Name="listBoxPerson" Margin="5"></ListBox>
+    </StackPanel>
+</Window>

@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfBookCodeSample.CodeSample.StyleSample.Trigger.DataTriggerSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample.CodeSample.StyleSample.Trigger"
+        xmlns:model="clr-namespace:WpfBookCodeSample.Model"
+        mc:Ignorable="d"
+        Title="DataTriggerSample" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <model:L2BConverter x:Key="cvtr"></model:L2BConverter>
+        <!--当TextBox的Text长度小于7个字符时其Border会保持红色-->
+        <Style TargetType="TextBox">
+            <Style.Triggers>
+                <!--DataTrigger对象的Binding属性会把数据源源不断送过来，
+                一旦送来的值与Value属性一致，DataTrigger即被触发-->
+                <!--为了将控件自己作为数据源，我们使用了RelativeSource-->
+                <!--当Converter的convert方法的返回值是false时，触发DataTrigger-->
+                <DataTrigger Binding="{Binding RelativeSource={x:Static RelativeSource.Self},
+                    Path=Text.Length,Converter={StaticResource cvtr}}" Value="false">
+                    <Setter Property="BorderBrush" Value="Red"></Setter>
+                    <Setter Property="BorderThickness" Value="1"></Setter>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <TextBox Margin="5"></TextBox>
+        <TextBox Text="1234567" Margin="5,0"></TextBox>
+        <TextBox Text="123456" Margin="5"></TextBox>
+    </StackPanel>
+</Window>

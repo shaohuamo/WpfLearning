@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfBookCodeSample.CodeSample.StyleSample.Trigger.MultiTriggerSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBookCodeSample.CodeSample.StyleSample.Trigger"
+        mc:Ignorable="d"
+        Title="MultiTriggerSample" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="CheckBox">
+            <Style.Triggers>
+                <!--实际上叫MultiConditionTrigger更合适，因为必须多个条件同时成立时才会被触发-->
+                <MultiTrigger>
+                    <!--同时满足CheckBox被选中且Content为“粒粒皆辛苦”时Trigger才会被触发-->
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsChecked" Value="True"></Condition>
+                        <Condition Property="Content" Value="粒粒皆辛苦"></Condition>
+                    </MultiTrigger.Conditions>
+                    <MultiTrigger.Setters>
+                        <Setter Property="FontSize" Value="20"></Setter>
+                        <Setter Property="Foreground" Value="Orange"></Setter>
+                    </MultiTrigger.Setters>
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <CheckBox Content="锄禾日当午" Margin="5"></CheckBox>
+        <CheckBox Content="汗滴禾下土" Margin="5,0" IsChecked="True"></CheckBox>
+        <CheckBox Content="谁知盘中餐" Margin="5"></CheckBox>
+        <CheckBox Content="粒粒皆辛苦" Margin="5,0" IsChecked="True"></CheckBox>
+    </StackPanel>
+</Window>

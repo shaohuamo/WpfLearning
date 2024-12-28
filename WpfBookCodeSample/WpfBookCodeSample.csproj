@@ -284,6 +284,30 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CodeSample\StyleSample\SetterSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\StyleSample\Trigger\DataTriggerSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\StyleSample\Trigger\EventTriggerSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\StyleSample\Trigger\MultiDataTriggerSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\StyleSample\Trigger\MultiTriggerSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CodeSample\StyleSample\Trigger\TriggerSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CodeSample\TemplateSample\AccessControlsInTemplate\AccessControlsInControlTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -377,6 +401,24 @@
     <Compile Include="CodeSample\RoutedEventSample\WpfInnerRoutedEvent.xaml.cs">
       <DependentUpon>WpfInnerRoutedEvent.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CodeSample\StyleSample\SetterSample.xaml.cs">
+      <DependentUpon>SetterSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\StyleSample\Trigger\DataTriggerSample.xaml.cs">
+      <DependentUpon>DataTriggerSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\StyleSample\Trigger\EventTriggerSample.xaml.cs">
+      <DependentUpon>EventTriggerSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\StyleSample\Trigger\MultiDataTriggerSample.xaml.cs">
+      <DependentUpon>MultiDataTriggerSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\StyleSample\Trigger\MultiTriggerSample.xaml.cs">
+      <DependentUpon>MultiTriggerSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSample\StyleSample\Trigger\TriggerSample.xaml.cs">
+      <DependentUpon>TriggerSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CodeSample\TemplateSample\AccessControlsInTemplate\AccessControlsInControlTemplate.xaml.cs">
       <DependentUpon>AccessControlsInControlTemplate.xaml</DependentUpon>
     </Compile>
@@ -450,6 +492,7 @@
     <Compile Include="CodeSample\ControlSample\P56ListBox.xaml.cs">
       <DependentUpon>P56ListBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\L2BConverter.cs" />
     <Compile Include="Model\MultiBindingConverter.cs" />
     <Compile Include="Model\NameToPhotoPathConverter.cs" />
     <Compile Include="Model\Person.cs" />
