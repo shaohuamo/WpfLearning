@@ -1,0 +1,25 @@
+﻿<Window x:Class="CustomSimpleMVVMDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CustomSimpleMVVMDemo"
+        xmlns:customUserControl="clr-namespace:CustomSimpleMVVMDemo.CustomUserControl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <customUserControl:OldUIWithoutMvvm Grid.Row="0" Grid.Column="0" Margin="10" BorderBrush="Red" BorderThickness="2"/>
+        <customUserControl:NewUIWithoutMvvm Grid.Row="0" Grid.Column="1" Margin="10" BorderBrush="Red" BorderThickness="2"/>
+        <customUserControl:OldUIWithMvvm Grid.Row="1" Grid.Column="0" Margin="10" BorderBrush="Red" BorderThickness="2"/>
+        <customUserControl:NewUIWithMvvm Grid.Row="1" Grid.Column="1" Margin="10" BorderBrush="Red" BorderThickness="2"/>
+    </Grid>
+
+</Window>
