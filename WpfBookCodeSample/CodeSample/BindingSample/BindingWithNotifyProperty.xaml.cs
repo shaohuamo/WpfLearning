@@ -8,10 +8,10 @@ namespace WpfBookCodeSample.CodeSample.BindingSample
     /// <summary>
     /// Binding source from code behind
     /// </summary>
-    public partial class binding_samp1 : Window
+    public partial class BindingWithNotifyProperty : Window
     {
         private Student stu;
-        public binding_samp1()
+        public BindingWithNotifyProperty()
         {
             InitializeComponent();
 

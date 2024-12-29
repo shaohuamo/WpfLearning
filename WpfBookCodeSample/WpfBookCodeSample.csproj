@@ -97,8 +97,8 @@
     <Compile Include="CodeSample\BindingSample\BindingXmlDataInXaml.xaml.cs">
       <DependentUpon>BindingXmlDataInXaml.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CodeSample\BindingSample\binding_samp1.xaml.cs">
-      <DependentUpon>binding_samp1.xaml</DependentUpon>
+    <Compile Include="CodeSample\BindingSample\BindingWithNotifyProperty.xaml.cs">
+      <DependentUpon>BindingWithNotifyProperty.xaml</DependentUpon>
     </Compile>
     <Compile Include="CodeSample\BindingSample\MultiBindingSample.xaml.cs">
       <DependentUpon>MultiBindingSample.xaml</DependentUpon>
@@ -192,7 +192,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CodeSample\BindingSample\binding_samp1.xaml">
+    <Page Include="CodeSample\BindingSample\BindingWithNotifyProperty.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

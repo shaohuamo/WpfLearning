@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:WpfBookCodeSample"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
              xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av"
-             StartupUri="/CodeSample/StyleSample/Trigger/EventTriggerSample.xaml">
+             StartupUri="/CodeSample/BindingSample/BindingWithNotifyProperty.xaml">
     <Application.Resources>
         <system:String x:Key="app" >this Message is from App.xaml</system:String>
 
