@@ -1,21 +1,20 @@
 ﻿using CustomSimpleMVVMDemo.Commands;
 using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CustomSimpleMVVMDemo.Models
+namespace CustomSimpleMVVMDemo.ViewModels
 {
-    public class CalculatorViewModel: BaseViewModel
+    public class CalculatorViewModel: NotificationObject
     {
 		private double input1;
 
 		public double Input1
 		{
 			get => input1;
-            set => SetField(ref input1, value);
+            set
+            {
+                input1 = value;
+                RaisePropertyChanged("Input1");
+            }
         }
 
         private double input2;
@@ -23,7 +22,11 @@ namespace CustomSimpleMVVMDemo.Models
         public double Input2
         {
             get => input2;
-            set => SetField(ref input2, value);
+            set
+            {
+                input2 = value;
+                RaisePropertyChanged("Input2");
+            }
         }
 
         private double result;
@@ -31,7 +34,11 @@ namespace CustomSimpleMVVMDemo.Models
         public double Result
         {
             get => result;
-            set => SetField(ref result, value);
+            set
+            {
+                result = value;
+                RaisePropertyChanged("Result");
+            }
         }
 
         public DelegateCommand AddCommand { get; set; }
