@@ -8,6 +8,9 @@ using System.Windows.Data;
 
 namespace WpfBookCodeSample.Model
 {
+    //尽管DependencyObjectStudent类没有实现INotifyPropertyChanged接口，
+    //但是当依赖属性的值发生改变时与之关联的Binding对象依然可以得到通知，
+    //依赖属性默认带有这样的功能，天生就是合格的数据源。
     public class DependencyObjectStudent:DependencyObject
     {
         //use ReSharper shortcut "dependencyProperty" create DependencyProperty
